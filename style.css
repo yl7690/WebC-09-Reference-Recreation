@@ -1,0 +1,372 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 153vw;
+  background-color: #fce8e9;
+  overflow: hidden;
+}
+
+#part1 {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+}
+
+#part2 {
+  height: 29%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fab5b8;
+}
+
+#part3 {
+  height: 54%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2vw;
+}
+
+#part1 > .left {
+  width: 47%;
+  height: 100%;
+}
+
+#part1 > .right {
+  width: 53%;
+}
+
+#part1 > .left > .up {
+  height: 58%;
+  /* background-color: rgba(255, 0, 0, 0.3); */
+  display: flex;
+  flex-direction: row;
+}
+
+#part1 > .left > .up > p {
+  width: 37%;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+  margin: 0px;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 8vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#part1 > .left > .up > h1 {
+  Width: 63%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.9vw;
+  padding-left: 1vw;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18.5vw;
+  color: #ef191b;
+}
+
+#part1 > .left > p {
+  height: 42%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  margin: 0px;
+  font-family: ff-scala-sans-pro,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 7.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1vw;
+  padding-right: 0.8vw;
+}
+
+#part1 > .right h1 {
+  height: 53%;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 1vw;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18.5vw;
+  color: #ef191b;
+  line-height: 17vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#part1 > .right h1:before {
+    content: "";
+    display: block;
+    height: 96%;
+    border-left: 1.4vw solid #ef191b;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#numbers {
+  height: 47%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 3.8vw;
+  padding-right: 1.8vw;
+  letter-spacing: 0.02vw;
+  position: relative;
+  border-top: 0.4vw solid black;
+  color: #9ad9ea;
+}
+
+h2:first-child {
+  margin: 0px;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2:last-child {
+  margin: 0px;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#numbers:before {
+    content: "";
+    display: block;
+    height: 100%;
+    border-left: 1.4vw solid #ef191b;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#part2 > .left {
+  width: 47%;
+  height: 100%;
+}
+
+#part2 > .right {
+  width: 53%;
+  height: 100%;
+  position: relative;
+}
+
+#part2 > .right:before {
+    content: "";
+    display: block;
+    height: 100%;
+    border-left: 1.4vw solid #ef191b;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#part3 h1 {
+  margin: 0px;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.82vw;
+  letter-spacing: -0.055vw;
+  padding-top: 0.3vw;
+  color: #8ab8d2;
+}
+
+h1 + p {
+  margin: 0px;
+}
+
+p + p {
+  margin: 0px;
+}
+
+#part3 > .up {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+#part3 > .up > p {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.25vw;
+  line-height: 2.53vw;
+  color: rgba(55, 55, 55, 1);
+}
+
+#part3 > .up > p:nth-child(3) {
+  letter-spacing: -.01vw;
+}
+
+#part3 > .up > p:nth-child(4) {
+  letter-spacing: -.03vw;
+}
+
+#part3 > .up > p:nth-child(5) {
+  letter-spacing: -.01vw;
+}
+
+#part3 > .up > p:nth-child(6) {
+  letter-spacing: -.05vw;
+}
+
+#part3 > .up > p:nth-child(7) {
+  letter-spacing: 0.01vw;
+}
+
+#part3 > .up > p:nth-child(8) {
+  letter-spacing: 0.01vw;
+}
+
+#part3 > .up > p:nth-child(10) {
+  letter-spacing: -.04vw;
+}
+
+#part3 > .up > p:nth-child(11) {
+  letter-spacing: 0.05vw;
+}
+
+#part3 > .up > p:nth-child(12) {
+  letter-spacing: 0.03vw;
+}
+
+#part3 > .up > p:nth-child(13) {
+  letter-spacing: 0.03vw;
+}
+
+#part3 > .up > p:nth-child(14) {
+  letter-spacing: -0.05vw;
+}
+
+#down {
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.95vw;
+}
+
+#line1 p:first-child {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0px;
+  letter-spacing: 0.02vw;
+}
+
+#line1 p:nth-child(2) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0px;
+  letter-spacing: 0.01vw;
+}
+
+#line1 p:nth-child(3) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0px;
+  letter-spacing: 0.005vw;
+}
+
+#down > p {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2vw;
+  margin: 0px;
+  padding-top: 0.99vw;
+  letter-spacing: -.015vw;
+  color: #d7363a;
+}
+
+#letters {
+  position: relative;
+}
+
+#letters > div:nth-child(1) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 123vw;
+  position: absolute;
+  top: 11.2vw;
+  left: -7vw;
+  margin: 0px;
+  line-height: 70%;
+  color: rgba(154, 217, 234, 0.35);
+}
+
+#letters > div:nth-child(2) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 86.3vw;
+  position: absolute;
+  top: 54vw;
+  left: 18.6vw;
+  margin: 0px;
+  color: rgba(231, 29, 35, 0.28);
+}
+
+#letters > div:nth-child(3) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 123.7vw;
+  position: absolute;
+  top: 88.8vw;
+  left: 32.5vw;
+  margin: 0px;
+  color: rgba(105, 105, 105, 0.4);
+}
+
+#letters > div:nth-child(4) {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 123vw;
+  position: absolute;
+  top: 34vw;
+  right: -42vw;
+  margin: 0px;
+  color: rgba(148, 140, 125, 0.35);
+}
