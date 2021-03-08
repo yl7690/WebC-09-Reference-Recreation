@@ -321,7 +321,7 @@ p + p {
   color: #d7363a;
 }
 
-#letters {
+#letters,#letter {
   position: relative;
 }
 
@@ -342,9 +342,9 @@ p + p {
   font-family: ff-scala-sans-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 86.3vw;
+  font-size: 85.8vw;
   position: absolute;
-  top: -16.5vw;
+  top: -16.3vw;
   left: 18.6vw;
   margin: 0px;
   color: rgba(231, 29, 35, 0.28);
